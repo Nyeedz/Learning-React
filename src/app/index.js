@@ -6,16 +6,17 @@ import { Home } from './components/Home'
 
 class App extends React.Component {
   render() {
-    const user = {
-      name: 'Christian',
-      musica: {
-        estilo: 'Rock'
-      },
-      bebidas: {
-        cerveja: 'Cerveja'
-      },
-      hobbies: ['Esportes', 'Ler']
-    }
+
+    // const user = {
+    //   name: 'Christian',
+    //   musica: {
+    //     estilo: 'Rock'
+    //   },
+    //   bebidas: {
+    //     cerveja: 'Cerveja'
+    //   },
+    //   hobbies: ['Esportes', 'Ler']
+    // }
 
     return (
       <div className="container">
@@ -26,9 +27,8 @@ class App extends React.Component {
         </div>
         <div className="row">
           <div className="col-xs-10 col-xs-offset-1">
-            <Home age={25} user={user} >
-              <p>Passando dados para o componente sem props (children)</p>
-            </Home>
+            <Home name={"Christian"} initialAge={22} />
+              {/*<p>Passando dados para o componente sem props (children)</p>*/}
           </div>
         </div>
       </div>
